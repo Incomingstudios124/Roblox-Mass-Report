@@ -98,7 +98,7 @@ def ban(victim, amount, reason, cooldown, comments):
 		requestVerificationToken = soup.find("input", {"name" : "__RequestVerificationToken"}).attrs["value"]
 
 		reportRequest = session.post(
-			f"https://www.roblox.com/abusereport/userprofile?id={id}",
+			f"https://www.roblox.com/abusereport/asset?RedirectUrl=%252Fgames%252F17625359962%252FRIVALS&id=={17625359962}",
 			data = {
 				"__RequestVerificationToken": requestVerificationToken,
 				"ReportCategory": reason,
